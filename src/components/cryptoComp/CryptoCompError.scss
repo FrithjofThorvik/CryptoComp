@@ -1,0 +1,27 @@
+@import "styles/colors";
+
+.cryptoCompError {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	color: $white;
+	background-color: $tableDark;
+	box-shadow: inset 0 0 5px rgba(black, 0.8);
+	margin: 50px;
+	max-width: 250px;
+	padding: 10px 25px;
+	border-radius: 15px;
+
+	h2 {
+		color: red;
+	}
+
+	p {
+		text-align: center;
+		color: $gray;
+
+		margin: 15px;
+		font-weight: 300;
+	}
+}

@@ -1,0 +1,92 @@
+@import "styles/colors";
+
+.cryptoCompTable {
+	overflow: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	margin: 25px 0;
+	max-height: 600px;
+	border-radius: 15px;
+
+	table {
+		font-family: sans-serif;
+		border-collapse: collapse;
+		color: $grayWhite;
+		font-size: 14px;
+
+		thead {
+			position: sticky;
+			box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+			top: 0;
+
+			tr {
+				text-align: left;
+				color: $white;
+				background-color: $green;
+
+				th {
+					&:first-of-type {
+						border-top-left-radius: 15px;
+					}
+					&:last-of-type {
+						border-top-right-radius: 15px;
+					}
+				}
+			}
+		}
+
+		tbody {
+			tr {
+				background-color: $tableGray;
+				border-bottom: 1px solid $tableGray;
+
+				&:nth-of-type(even) {
+					background-color: $tableDark;
+				}
+
+				&:last-of-type {
+					border-bottom: 2px solid $green;
+				}
+
+				&:hover {
+					color: $green;
+					font-weight: bold;
+				}
+			}
+		}
+
+		th,
+		td {
+			padding: 10px 25px;
+		}
+	}
+
+	&-footer {
+		display: flex;
+		position: sticky;
+		align-items: center;
+		box-sizing: border-box;
+		justify-content: space-between;
+		background-color: $tableDark;
+		border-top: 1px solid $tableGray;
+		box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.3);
+		bottom: 0;
+		width: 100%;
+		padding: 5px 25px;
+
+		&-left {
+			flex: 1;
+		}
+
+		&-center {
+			flex: 3;
+		}
+
+		&-right {
+			display: flex;
+			justify-content: flex-end;
+			color: $white;
+			flex: 1;
+			font-size: 12px;
+		}
+	}
+}

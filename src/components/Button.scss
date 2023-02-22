@@ -1,0 +1,17 @@
+@import "styles/colors";
+
+.button {
+	color: $white;
+	background-color: $green;
+	transition: shadow 200ms ease-in-out;
+	box-shadow: 0 3px 5px rgba(black, 0.3);
+	border: 1px solid rgba($white, 0.5);
+	margin: 15px;
+	padding: 5px 15px;
+	border-radius: 5px;
+
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0 1px 3px rgba(black, 0.3);
+	}
+}

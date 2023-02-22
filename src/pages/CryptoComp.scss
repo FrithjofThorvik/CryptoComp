@@ -1,0 +1,18 @@
+@import "styles/colors";
+
+.cryptoComp {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 90%;
+
+	h1 {
+		color: $white;
+		text-shadow: 0 0 7px rgba($white, 0.7);
+	}
+
+	p {
+		color: $white;
+	}
+}
